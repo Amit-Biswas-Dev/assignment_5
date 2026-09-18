@@ -1,0 +1,110 @@
+[
+  {
+    "img": "react",
+    "heading": "React",
+    "usibility": "Popular",
+    "description": "A declarative component-based JavaScript library for building modern user interfaces.",
+    "typesOf": "Frontend",
+    "startingStatus": "Beginner-Friendly",
+    "rating": 4.9
+  },
+  {
+    "img": "vue",
+    "heading": "Vue.js",
+    "usibility": "Popular",
+    "description": "An approachable, performant, and versatile framework for building web user interfaces.",
+    "typesOf": "Frontend",
+    "startingStatus": "Beginner-Friendly",
+    "rating": 4.8
+  },
+  {
+    "img": "svelte",
+    "heading": "Svelte",
+    "usibility": "Fast",
+    "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
+    "typesOf": "Frontend",
+    "startingStatus": "Beginner-Friendly",
+    "rating": 4.8
+  },
+  {
+    "img": "nextjs",
+    "heading": "Next.js",
+    "usibility": "Popular",
+    "description": "The React framework for full-stack web applications with hybrid static and server rendering.",
+    "typesOf": "Frontend",
+    "startingStatus": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "img": "nodejs",
+    "heading": "Node.js",
+    "usibility": "Standard",
+    "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
+    "typesOf": "Backend",
+    "startingStatus": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "img": "postgresql",
+    "heading": "PostgreSQL",
+    "usibility": "Top SQL",
+    "description": "A powerful, open-source object-relational database system with proven reliability.",
+    "typesOf": "Database",
+    "startingStatus": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "img": "redis",
+    "heading": "Redis",
+    "usibility": "Cache",
+    "description": "An in-memory data structure store used as a high-speed database, cache, and message broker.",
+    "typesOf": "Database",
+    "startingStatus": "Intermediate",
+    "rating": 4.8
+  },
+  {
+    "img": "javascript",
+    "heading": "JavaScript",
+    "usibility": "Ubiquitous",
+    "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
+    "typesOf": "Language",
+    "startingStatus": "Beginner-Friendly",
+    "rating": 4.9
+  },
+  {
+    "img": "typescript",
+    "heading": "TypeScript",
+    "usibility": "Essential",
+    "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
+    "typesOf": "Language",
+    "startingStatus": "Intermediate",
+    "rating": 4.9
+  },
+  {
+    "img": "java",
+    "heading": "Java",
+    "usibility": "Robust",
+    "description": "A secure, object-oriented programming language designed for portability and scale.",
+    "typesOf": "Language",
+    "startingStatus": "Intermediate",
+    "rating": 4.6
+  },
+  {
+    "img": "tailwind",
+    "heading": "Tailwind CSS",
+    "usibility": "Modern",
+    "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
+    "typesOf": "Styling",
+    "startingStatus": "Beginner-Friendly",
+    "rating": 4.9
+  },
+  {
+    "img": "docker",
+    "heading": "Docker",
+    "usibility": "Containers",
+    "description": "A platform designed to build, share, and run containerized applications reliably.",
+    "typesOf": "DevOps",
+    "startingStatus": "Intermediate",
+    "rating": 4.9
+  }
+]
