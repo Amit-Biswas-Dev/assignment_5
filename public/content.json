@@ -1,6 +1,6 @@
 [
   {
-    "img": "react",
+    "img": "./icons/react.png",
     "heading": "React",
     "usibility": "Popular",
     "description": "A declarative component-based JavaScript library for building modern user interfaces.",
@@ -9,7 +9,7 @@
     "rating": 4.9
   },
   {
-    "img": "vue",
+    "img": "./icons/vuejs.png",
     "heading": "Vue.js",
     "usibility": "Popular",
     "description": "An approachable, performant, and versatile framework for building web user interfaces.",
@@ -18,7 +18,7 @@
     "rating": 4.8
   },
   {
-    "img": "svelte",
+    "img": "./icons/svelte.png",
     "heading": "Svelte",
     "usibility": "Fast",
     "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
@@ -27,7 +27,7 @@
     "rating": 4.8
   },
   {
-    "img": "nextjs",
+    "img": "./icons/nextjs.png",
     "heading": "Next.js",
     "usibility": "Popular",
     "description": "The React framework for full-stack web applications with hybrid static and server rendering.",
@@ -36,7 +36,7 @@
     "rating": 4.9
   },
   {
-    "img": "nodejs",
+    "img": "./icons/nodejs.png",
     "heading": "Node.js",
     "usibility": "Standard",
     "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
@@ -45,7 +45,7 @@
     "rating": 4.8
   },
   {
-    "img": "postgresql",
+    "img": "./icons/postgresql.png",
     "heading": "PostgreSQL",
     "usibility": "Top SQL",
     "description": "A powerful, open-source object-relational database system with proven reliability.",
@@ -54,7 +54,7 @@
     "rating": 4.9
   },
   {
-    "img": "redis",
+    "img": "./icons/redis.png",
     "heading": "Redis",
     "usibility": "Cache",
     "description": "An in-memory data structure store used as a high-speed database, cache, and message broker.",
@@ -63,7 +63,7 @@
     "rating": 4.8
   },
   {
-    "img": "javascript",
+    "img": "./icons/javascript.png",
     "heading": "JavaScript",
     "usibility": "Ubiquitous",
     "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
@@ -72,7 +72,7 @@
     "rating": 4.9
   },
   {
-    "img": "typescript",
+    "img": "./icons/typescript.png",
     "heading": "TypeScript",
     "usibility": "Essential",
     "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
@@ -81,7 +81,7 @@
     "rating": 4.9
   },
   {
-    "img": "java",
+    "img": "./icons/java.jpg",
     "heading": "Java",
     "usibility": "Robust",
     "description": "A secure, object-oriented programming language designed for portability and scale.",
@@ -90,7 +90,7 @@
     "rating": 4.6
   },
   {
-    "img": "tailwind",
+    "img": "./icons/tailwind.png",
     "heading": "Tailwind CSS",
     "usibility": "Modern",
     "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
@@ -99,7 +99,7 @@
     "rating": 4.9
   },
   {
-    "img": "docker",
+    "img": "./icons/docker.png",
     "heading": "Docker",
     "usibility": "Containers",
     "description": "A platform designed to build, share, and run containerized applications reliably.",

@@ -20,25 +20,25 @@ const SelectedCard = ({ tech }: SelectedCardProps) => {
               key={index}
               className="card bg-base-100 shadow-md border border-gray-200"
             >
-              <figure className="px-4 pt-4">
+
+              <div className="flex justify-baseline items-center">
+              <figure className="px-4 pt-4 ">
                 <img
                   src={item.img}
                   alt={item.heading}
-                  className="w-full h-40 object-cover rounded-xl"
+                  className="w-12 h-12 object-cover rounded-xl"
                 />
               </figure>
 
-              <div className="card-body">
+              <div className=" ">
                 <h2 className="card-title">
                   {item.heading}
                 </h2>
 
-                <p>{item.description}</p>
-
-                <p>
-                  <strong>Rating:</strong> {item.rating}
-                </p>
+                <p>{item.usibility}</p>
               </div>
+              </div>
+              
             </div>
           ))}
         </div>

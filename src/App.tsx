@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import TechnologiesCart from "./components/TechnologiesCart";
 import type { Itechnologie } from "./types/technologiesType";
-import SelectedCard from "./components/selectedCard";
+import SelectedCard from "./components/SelectedCard";
 
 const tech = async (): Promise<Itechnologie[]> => {
   const res = await fetch("/content.json");
@@ -32,28 +32,43 @@ function App() {
 
   return (
     <>
-      <div>
-        <Nav />
+      <Nav />
 
-        <Banner />
+      <Banner />
 
-        <main className="container mx-auto grid grid-cols-4 gap-5">
+      <main className="container mx-auto">
+
+        {/* Heading */}
+        <div className="mb-6">
+          <h3 className="text-2xl font-bold">
+            Explore the Technologies
+          </h3>
+
+          <p className="text-gray-600">
+            Pick the technology per category to build your ideal stack.
+          </p>
+        </div>
+
+        {/* Technologies + Selected */}
+        <div className="grid grid-cols-4 gap-5">
+
           <Suspense fallback={<h2>Loading....</h2>}>
             <div className="col-span-3">
               <TechnologiesCart
-              techno={techno}
-              savetech={savetech}
-            />
+                techno={techno}
+                savetech={savetech}
+              />
             </div>
           </Suspense>
 
           <div className="col-span-1">
             <SelectedCard tech={savedT} />
           </div>
-        </main>
 
-        <Footer />
-      </div>
+        </div>
+      </main>
+
+      <Footer />
     </>
   );
 }
