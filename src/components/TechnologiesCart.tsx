@@ -16,7 +16,7 @@ const TechnologiesCart = ({ techno, savetech }: TechProps) => {
           key={index}
           className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col justify-between"
         >
-          {/* Header Section: Logo & Top Badge */}
+          
           <div>
             <div className="flex justify-between items-center mb-4">
               <div className="w-12 h-12 rounded-lg overflow-hidden bg-yellow-400 flex items-center justify-center">
@@ -31,7 +31,7 @@ const TechnologiesCart = ({ techno, savetech }: TechProps) => {
               </span>
             </div>
 
-            {/* Title & Description */}
+            
             <h2 className="text-2xl font-bold text-slate-900 mb-2">
               {tech.heading}
             </h2>
@@ -40,7 +40,7 @@ const TechnologiesCart = ({ techno, savetech }: TechProps) => {
             </p>
           </div>
 
-          {/* Bottom Section: Details & Action Button */}
+          
           <div>
             <div className="flex items-center justify-between text-sm mb-6 pt-4 border-t border-gray-50">
               <span className="bg-slate-100 text-slate-600 px-3 py-1 rounded-md font-medium">

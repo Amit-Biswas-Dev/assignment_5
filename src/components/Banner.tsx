@@ -7,7 +7,7 @@ const Banner = () => {
         <div className="container mx-auto">
             <div className="flex items-center justify-between">
                 
-                {/* Left Side */}
+                
                 <div>
                     <h1 className="text-4xl font-bold">
                         Build Your Ideal
@@ -34,7 +34,7 @@ const Banner = () => {
                     </div>
                 </div>
 
-                {/* Right Side */}
+                
                 <div>
                     <img src={bannerImage} alt="Development Stack" />
                 </div>
