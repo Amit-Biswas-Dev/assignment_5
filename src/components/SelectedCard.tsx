@@ -1,9 +1,10 @@
+
 import type { Itechnologie } from "../types/technologiesType";
 import { FiX, FiTrash2 } from "react-icons/fi";
 
 interface SelectedCardProps {
   tech: Itechnologie[];
-  onRemove: (heading: string) => void;
+  onRemove: (id: string) => void;
   onClear: () => void;
 }
 
@@ -19,41 +20,45 @@ const SelectedCard = ({
       </h2>
 
       {tech.length === 0 ? (
-        <p>No technology selected yet.</p>
+        <p className="text-gray-500">
+          No technology selected yet.
+        </p>
       ) : (
         <div className="space-y-4">
-          {tech.map((item, index) => (
+          {tech.map((item) => (
             <div
-              key={index}
+              key={item.id}
               className="card bg-base-100 shadow-md border border-gray-200"
             >
               <div className="flex items-center justify-between p-4">
+
                 
                 <div className="flex items-center gap-3">
                   <figure>
                     <img
-                      src={item.img}
-                      alt={item.heading}
+                      src={item.icon}
+                      alt={item.name}
                       className="w-12 h-12 object-contain rounded-xl"
                     />
                   </figure>
 
                   <div>
                     <h2 className="card-title text-lg">
-                      {item.heading}
+                      {item.name}
                     </h2>
 
                     <p className="text-sm text-gray-500">
-                      {item.usibility}
+                      {item.badge}
                     </p>
                   </div>
                 </div>
 
+                
                 <button
                   type="button"
                   className="text-red-500 hover:text-red-700"
-                  onClick={() => onRemove(item.heading)}
-                  aria-label={`Remove ${item.heading}`}
+                  onClick={() => onRemove(item.id)}
+                  aria-label={`Remove ${item.name}`}
                 >
                   <FiX />
                 </button>
@@ -64,6 +69,7 @@ const SelectedCard = ({
         </div>
       )}
 
+      
       <button
         type="button"
         disabled={tech.length === 0}
