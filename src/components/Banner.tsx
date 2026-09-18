@@ -1,47 +1,50 @@
 
-import React from 'react';
-import bannerImage from '../assets/banner-stack.png';
+import bannerImage from "../assets/banner-stack.png";
 
 const Banner = () => {
-    return (
-        <div className="container mx-auto">
-            <div className="flex items-center justify-between">
-                
-                
-                <div>
-                    <h1 className="text-4xl font-bold">
-                        Build Your Ideal
-                        <br />
-                        Development Stack
-                    </h1>
+  return (
+    <div className="container mx-auto px-4 py-10">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-10">
 
-                    <p className="my-4">
-                        Explore frontend, backend, database, and tooling options,
-                        <br />
-                        compare them side by side, and put together the stack that fits your
-                        <br />
-                        next project.
-                    </p>
+       
+        <div className="flex-1">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+            Build Your Ideal
+            <br />
+            Development Stack
+          </h1>
 
-                    <div className="flex gap-3">
-                        <p className="bg-cyan-500 px-2 py-1 rounded-md">
-                            Explore Technologies
-                        </p>
+          <p className="my-4 text-gray-600 leading-7">
+            Explore frontend, backend, database, and tooling options,
+            <br className="hidden md:block" />
+            compare them side by side, and put together the stack that fits your
+            <br className="hidden md:block" />
+            next project.
+          </p>
 
-                        <p className="px-2 py-1">
-                            Learn More
-                        </p>
-                    </div>
-                </div>
+          <div className="flex gap-3">
+            <button className="bg-cyan-500 px-4 py-2 rounded-md text-white font-medium hover:bg-cyan-600 transition">
+              Explore Technologies
+            </button>
 
-                
-                <div>
-                    <img src={bannerImage} alt="Development Stack" />
-                </div>
-
-            </div>
+            <button className="px-4 py-2 rounded-md font-medium hover:bg-gray-100 transition">
+              Learn More
+            </button>
+          </div>
         </div>
-    );
+
+        
+        <div className="flex-1 flex justify-center">
+          <img
+            src={bannerImage}
+            alt="Development Stack"
+            className="max-w-full h-auto"
+          />
+        </div>
+
+      </div>
+    </div>
+  );
 };
 
 export default Banner;

@@ -1,9 +1,10 @@
 export interface Itechnologie {
-  img: string;
-  heading: string;
-  usibility: string;
+  id: string;
+  name: string;
+  category: string;
   description: string;
-  typesOf: string;
-  startingStatus: string;
-  rating: number | string;
+  icon: string;
+  rating: number;
+  difficulty: string;
+  badge: string;
 }

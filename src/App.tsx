@@ -24,37 +24,37 @@ const techno = tech();
 function App() {
   const [savedT, setSavedT] = useState<Itechnologie[]>([]);
 
-  
+  // Add technology
   const savetech = (tech: Itechnologie) => {
     const exists = savedT.some(
-      (item) => item.heading === tech.heading
+      (item) => item.id === tech.id
     );
 
     if (exists) {
-      toast.success(`${tech.heading} is already on your list.`);
+      toast.success(`${tech.name} is already on your list.`);
       return;
     }
 
     setSavedT([...savedT, tech]);
-    toast.success(`${tech.heading} added to your list.`);
+    toast.success(`${tech.name} added to your list.`);
   };
 
-  
-  const removeTech = (heading: string) => {
+  // Remove technology
+  const removeTech = (id: string) => {
     const tech = savedT.find(
-      (item) => item.heading === heading
+      (item) => item.id === id
     );
 
     setSavedT((prev) =>
-      prev.filter((item) => item.heading !== heading)
+      prev.filter((item) => item.id !== id)
     );
 
     if (tech) {
-      toast.success(`${tech.heading} removed from your list.`);
+      toast.success(`${tech.name} removed from your list.`);
     }
   };
 
-  
+  // Clear all technologies
   const clearList = () => {
     if (!savedT.length) return;
 
@@ -74,7 +74,6 @@ function App() {
 
       <main className="container mx-auto">
 
-        
         <div className="mb-6">
           <h3 className="text-2xl font-bold">
             Explore the Technologies
@@ -85,7 +84,6 @@ function App() {
           </p>
         </div>
 
-        
         <div className="grid grid-cols-4 gap-5">
 
           <Suspense fallback={<h2>Loading....</h2>}>
