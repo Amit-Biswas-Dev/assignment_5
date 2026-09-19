@@ -75,8 +75,8 @@ function App() {
       <main className="container mx-auto">
 
         <div className="mb-6">
-          <h3 className="text-2xl font-bold">
-            Explore the Technologies
+          <h3 className="text-2xl font-bold ">
+            Explore the <span className="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent ">Technologies</span>
           </h3>
 
           <p className="text-gray-600">
