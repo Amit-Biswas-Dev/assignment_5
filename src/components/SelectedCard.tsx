@@ -15,15 +15,16 @@ const SelectedCard = ({
 }: SelectedCardProps) => {
   return (
     <div className="col-span-1">
+
+  
       <h2 className="text-2xl font-bold mb-4">
-        Selected Technologies
+        {tech.length === 0
+          ? "No technologies selected yet."
+          : `${tech.length} Selected Technologies `}
       </h2>
 
-      {tech.length === 0 ? (
-        <p className="text-gray-500">
-          No technology selected yet.
-        </p>
-      ) : (
+      
+      {tech.length > 0 && (
         <div className="space-y-4">
           {tech.map((item) => (
             <div
@@ -79,6 +80,7 @@ const SelectedCard = ({
         <FiTrash2 />
         Clear list
       </button>
+
     </div>
   );
 };

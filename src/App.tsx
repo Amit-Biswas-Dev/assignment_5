@@ -24,6 +24,8 @@ const techno = tech();
 function App() {
   const [savedT, setSavedT] = useState<Itechnologie[]>([]);
 
+  
+
   // Add technology
   const savetech = (tech: Itechnologie) => {
     const exists = savedT.some(
