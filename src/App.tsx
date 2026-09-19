@@ -7,6 +7,8 @@ import type { Itechnologie } from "./types/technologiesType";
 import SelectedCard from "./components/SelectedCard";
 import toast, { Toaster } from "react-hot-toast";
 
+
+
 const tech = async (): Promise<Itechnologie[]> => {
   const res = await fetch("/content.json");
 
